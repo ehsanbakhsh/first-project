@@ -10,6 +10,7 @@ font-family: 'Nunito', sans-serif; */
 html {
   font-size: 62.5%;
 }
+/* Typography */
 body {
   /* font-family: "Inter", sans-serif; */
   font-family: "Nunito", sans-serif;
@@ -48,5 +49,54 @@ p {
   }
   h3 {
     font-size: 2.4rem;
+  }
+}
+/* Links */
+a {
+  text-decoration: none;
+}
+.link-arrow {
+  color: var(--color-ascent);
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.link-arrow::after {
+  content: "=>";
+  margin-left: 15px;
+}
+.link-arrow:hover::after {
+  margin-left: 25px;
+  transition: margin 0.15s;
+}
+@media screen and (min-width: 1024px) {
+  .link-arrow {
+    font-size: 1.5rem;
+  }
+}
+/* Badges */
+.badge {
+  border-radius: 20px;
+  font-weight: bold;
+  padding: 0.5rem 2rem;
+  white-space: nowrap;
+}
+.badge--primary {
+  background-color: var(--color-primary);
+  color: #fff;
+}
+.badge--secondary {
+  background-color: var(--color-secondary);
+  color: #fff;
+}
+.badge--small {
+  font-size: 1.5rem;
+}
+@media screen and (min-width: 1024px) {
+  .badge {
+    font-size: 1.5rem;
+  }
+  .badge--small {
+    font-size: 1.2rem;
   }
 }
